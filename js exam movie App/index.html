@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>route Exam</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container d-flex">
+            <div class="menu p-3 d-flex justify-content-between flex-column text-center mx-auto">
+                <div class="category">
+                    <ul >
+                        <li class="item1">
+                            <a href="#" class="nav-category">Now Playing</a>
+                        </li>
+                        <li class="item2">
+                            <a href="#" class="nav-category">Popular</a>
+                        </li>
+                        <li class="item3">
+                            <a href="#" class="nav-category">Top Rated</a>
+                        </li>
+                        <li class="item4">
+                            <a href="#" class="nav-category">Trending</a>
+                        </li>
+                        <li class="item5">
+                            <a href="#" class="nav-category">Upcoming</a>
+                        </li>
+                        <li class="item6">
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="copyWrite">
+                    <p>Copyright &copy; 2019 All Rights Reserved.</p>
+                </div>
+
+            </div>
+            <div class="logo  d-flex justify-content-between flex-column ">
+                <div class="logo-img mx-auto py-3 px-2 ">
+                    <img src="imgs/logo.png" class="w-75" alt="">
+                </div>
+                <div class="toggle-btn mx-auto ">
+                    <i class="fa-solid fa-xmark fa-2xl" id="closeMenu"></i>
+                    <i class="fa-solid fa-bars fa-2xl" id="showMenu"></i>
+                </div>
+                <div class="links mx-auto mb-5 d-flex flex-column" >
+                    <i class="fa-solid fa-globe fa-xl mb-5"></i>
+                    <i class="fa-solid fa-share-nodes fa-xl"></i>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <header class="p-4 mt-5">
+        <div class="container w-75 m-auto">
+            <div class="row mb-5 search">
+                <div class="col-md-6">
+                    <input type="text" placeholder="get movies by word.." class="form-control" id="searchWordInput">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="search..." class="form-control" id="searchInPage">
+                </div>
+            </div>
+            <div class="tags" id="tags">
+           
+            <!-- <button class="btn btn-outline-light" id="genrebtn">Action</button> -->
+        </div>
+            <div class="row" id="data">
+                <div class="col-md-4 p-2">
+                    <div class="box position-relative overflow-hidden">
+                        <img src="imgs/62HCnUTziyWcpDaBO2i1DX17ljH.jpg" class="w-100" alt="">
+                        <div
+                            class="details p-4 text-center position-absolute top-100 w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                            <h4>movie name</h4>
+                            <p>movie story Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, quia.</p>
+                            <span>rate: 7.8</span>
+                            <span>date :22/5/2022</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <section class="contact mt-5" id="contact">
+                <h2 class="text-white my-3">ContactUs..</h2>
+                <div class="row">
+                    <div class="col-md-6 p-2">
+                        <input type="text" name="" id="userName" placeholder="Enter your Name.." class="form-control">
+                        <div class="alert" id="nameAlert">Your Name is not valid (no space or special char allowed..)</div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="email" name="" id="userEmail" placeholder="Enter Email.." class="form-control">
+                        <div class="alert" id="EmailAlert">Enter Valid Email (example@gmail.com)</div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="tel" name="" id="userPhone" placeholder="Enter phone.." class="form-control">
+                        <div class="alert" id="phoneAlert">Enter valid phone(01(0-1-2-5)xxxxxxxx)</div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="number" name="" id="userAge" placeholder="Enter Age.." class="form-control">
+                        <div class="alert" id="ageAlert">Enter Valid Age (18:80)</div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="password" name="" id="userPassword" placeholder="Enter Password.."
+                            class="form-control">
+                        <div class="alert" id="passwordAlert">Entre valid password <br>
+                            ( Minimum eight characters, at least one letter and one number )</div>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="password" name="" id="userRepassword" placeholder="ReEnter Password.."
+                            class="form-control">
+                        <div class="alert" id="rePasswordAlert">Entre valid Repassword</div>
+                    </div>
+                </div>
+                <button type="submit" disabled  id="submitBtn" class="btn btn-outline-danger px-3 mt-5"> Submit</button>
+            </section>
+        </div>
+
+    </header>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

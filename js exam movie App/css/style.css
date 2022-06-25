@@ -1,0 +1,125 @@
+body{
+    background-color: #000;
+    font-size: 14px;
+    font-family:-apple-system,BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',system-ui, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #f9f6f6;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all .3s;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul li{
+    list-style: none;
+    margin: .5rem 0;
+    padding: .2rem;
+}
+ul li:hover a{
+color:#ff655c;
+}
+
+nav{
+    width:250px !important;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#f9f6f6;
+    z-index: 99;
+    text-align: center;
+    transition: all .5s ease;
+}
+.logo{
+    background-color:#f9f6f6;
+    width: 20%;
+}
+.menu{
+    background-color: #000;
+    height: 100vh !important;
+    width: 80%;
+}
+ul li{
+    padding-top: 500px;
+    opacity: 0;
+}
+.social i {
+    margin: .5rem;
+}
+.social i:hover{
+color:#ff655c;
+}
+.social i,.copyWrite p{
+    color:#f9f6f6 ;
+}
+ i {
+    cursor: pointer;
+}
+
+#showMenu{
+    display: none;
+}
+input{
+    border: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.7) !important;
+    background-color:transparent !important;
+    font-size: 1rem !important;
+    padding: .5rem 1rem !important;
+    color: #fff !important;
+    font-weight: 300 !important ;
+    border-radius: 0 !important;
+}
+input::placeholder{
+    margin: auto;
+    text-align: center;
+}
+.details{
+    transition: all 1s;
+    background-color: rgba(255,255,255,.7);
+}
+.box:hover .details{
+    top: 0 !important;
+}
+.alert{
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f8d7da;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+.tags{
+
+    background-color:transparent;
+    padding: 2rem;
+    text-align: center;
+}
+.tags button{
+    margin: .25rem !important;
+
+}
+@media screen and (max-width: 992px) {
+    body {
+      font-size: 12px;
+    }
+    .menu{
+        padding:.5rem !important;
+    }
+    ul li{
+padding: .25rem !important;
+margin: .25rem !important;
+  }
+  .category{
+    padding:.25rem;
+  }
+  ul li a{
+    font-size:  1rem;
+  }
+  .tags{
+   display: none;
+  }
+}
+
